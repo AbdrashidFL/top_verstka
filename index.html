@@ -8,22 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="promotion">
         <div class="promotion-wrap__slider">
-            <div class="promotion-arrow"></div>
-            <div class="promotion-slider">
-                <img src="img/promotion/slider_1.jpg" alt="People" class="promotion-slider__item">
-                <img src="img/promotion/slider_2.jpg" alt="People" class="promotion-slider__item">
-                <img src="img/promotion/slider_3.jpg" alt="People" class="promotion-slider__item">
-                <img src="img/promotion/slider_4.jpg" alt="People" class="promotion-slider__item">
+            <div class="promotion-arrow">
+                <button class="promotion-arrow__prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+                    </svg>
+                </button>
+                <button class="promotion-arrow__next">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="promotion-slider owl-carousel owl-theme">
+                <div class="promotion-slider__item"><img src="img/promotion/slider_1.jpg" alt="Slider-1" class="promotion-slider__item"></div>
+                <div class="promotion-slider__item"><img src="img/promotion/slider_2.jpg" alt="Slider-2" class="promotion-slider__item"></div>
+                <div class="promotion-slider__item"><img src="img/promotion/slider_3.jpg" alt="Slider-3" class="promotion-slider__item"></div>
+                <div class="promotion-slider__item"><img src="img/promotion/slider_4.jpg" alt="Slider-4" class="promotion-slider__item"></div>
             </div>
         </div>
         <div class="container">
             <div class="promotion-info">
-                <h1 class="promotion-info__title">Этот текст добавлен для демонстрации на странице</h1>
+                <h1 class="promotion-info__title">Этот текст добавлен для <br>демонстрации на странице</h1>
                 <h2 class="promotion-info__subtitle">Акция действует с 01.07.18 по 31.07.18</h2>
                 <div class="promotion-info__btns">
                     <button class="promotion-info__btns-element">Подробнее</button>
@@ -34,34 +48,40 @@
                 <div class="promotion-specialist__item">
                     <img src="img/promotion/specialist-1.jpg" alt="People" class="promotion-specialist__item-img">
                     <div class="promotion-specialist__item-text">
-                        <p class="promotion-specialist__item-text-date">Акция действует с 01.07.18 по 31.07.18</p>
+                        <p class="promotion-specialist__item-text-date">Акция действует с 01.07.18</p>
                         <p class="promotion-specialist__item-text-name">Этот текст добавлен для демонстрации на странице</p>
                     </div>
                 </div>
                 <div class="promotion-specialist__item">
                     <img src="img/promotion/specialist-2.jpg" alt="People" class="promotion-specialist__item-img">
                     <div class="promotion-specialist__item-text">
-                        <p class="promotion-specialist__item-text-date">Акция действует с 01.07.18 по 31.07.18</p>
+                        <p class="promotion-specialist__item-text-date">Акция действует с 01.07.18</p>
                         <p class="promotion-specialist__item-text-name">Этот текст добавлен для демонстрации на странице</p>
                     </div>
                 </div>
                 <div class="promotion-specialist__item">
                     <img src="img/promotion/specialist-3.jpg" alt="People" class="promotion-specialist__item-img">
                     <div class="promotion-specialist__item-text">
-                        <p class="promotion-specialist__item-text-date">Акция действует с 01.07.18 по 31.07.18</p>
+                        <p class="promotion-specialist__item-text-date">Акция действует с 01.07.18</p>
                         <p class="promotion-specialist__item-text-name">Этот текст добавлен для демонстрации на странице</p>
                     </div>
                 </div>
                 <div class="promotion-specialist__item">
                     <img src="img/promotion/specialist-4.jpg" alt="People" class="promotion-specialist__item-img">
                     <div class="promotion-specialist__item-text">
-                        <p class="promotion-specialist__item-text-date">Акция действует с 01.07.18 по 31.07.18</p>
+                        <p class="promotion-specialist__item-text-date">Акция действует с 01.07.18</p>
                         <p class="promotion-specialist__item-text-name">Этот текст добавлен для демонстрации на странице</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
