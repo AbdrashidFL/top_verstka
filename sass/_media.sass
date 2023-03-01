@@ -1,0 +1,63 @@
+@media screen and (max-width: 1280px)
+    html
+        font-size: 0.078125vw
+    .promotion
+        &-info
+            margin-right: 100rem
+            &__title
+                font-size: 35rem
+            &__subtitle
+                font-size: 22rem
+@media screen and (max-width: 767px)
+    html
+        font-size: 1px
+    .promotion
+        padding-top: 0
+        padding-bottom: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 400rem
+        &-arrow, &-specialist
+            display: none
+        &-slider
+            &__item
+                height: 400rem
+            .owl-dots
+                position: absolute
+                bottom: 27rem
+                transform: translate(-50%, 0)
+                left: 50%
+                display: flex
+                gap: 0 17rem
+            .owl-dot
+                width: 14rem
+                height: 14rem
+                border-radius: 50%
+                border: 1rem solid #282828 !important
+            .active
+                background: #282828 !important
+        .container
+            align-items: center
+        &-info
+            margin-right: 0
+            align-items: center
+            &__title
+                text-align: center
+                font-size: 25rem
+            &__subtitle
+                font-size: 18rem
+                text-align: center
+            &__btns
+                margin-top: 29rem
+                &-element
+                    font-size: 13rem
+                    width: 128rem
+                    height: 37rem
+                    &:nth-child(2)
+                        display: none
+@media screen and (max-width: 375px)
+    html
+        font-size: 0.26666666666666666vw
+        
+    
