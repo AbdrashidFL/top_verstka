@@ -15,24 +15,36 @@
 </head>
 <body>
     <div class="promotion">
+        <div class="promotion-arrow">
+            <button class="promotion-arrow__prev">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+                </svg>
+            </button>
+            <button class="promotion-arrow__next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+                </svg>
+            </button>
+        </div>
         <div class="promotion-wrap__slider">
-            <div class="promotion-arrow">
-                <button class="promotion-arrow__prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
-                    </svg>
-                </button>
-                <button class="promotion-arrow__next">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
-                    </svg>
-                </button>
-            </div>
             <div class="promotion-slider owl-carousel owl-theme">
-                <div class="promotion-slider__item"><img src="img/promotion/slider_1.jpg" alt="Slider-1" class="promotion-slider__item"></div>
-                <div class="promotion-slider__item"><img src="img/promotion/slider_2.jpg" alt="Slider-2" class="promotion-slider__item"></div>
-                <div class="promotion-slider__item"><img src="img/promotion/slider_3.jpg" alt="Slider-3" class="promotion-slider__item"></div>
-                <div class="promotion-slider__item"><img src="img/promotion/slider_4.jpg" alt="Slider-4" class="promotion-slider__item"></div>
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/promotion/slider_1min.jpg">
+                    <img src="img/promotion/slider_1.jpg" alt="Slider-1" class="promotion-slider__item">
+                </picture>
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/promotion/slider_2min.jpg">
+                    <img src="img/promotion/slider_2.jpg" alt="Slider-1" class="promotion-slider__item">
+                </picture>
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/promotion/slider_3min.jpg">
+                    <img src="img/promotion/slider_3.jpg" alt="Slider-1" class="promotion-slider__item">
+                </picture>
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/promotion/slider_4min.jpg">
+                    <img src="img/promotion/slider_4.jpg" alt="Slider-1" class="promotion-slider__item">
+                </picture>
             </div>
         </div>
         <div class="container">
