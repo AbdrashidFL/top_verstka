@@ -1,0 +1,120 @@
+.promotion
+    padding-top: 220rem
+    padding-bottom: 20rem
+    position: relative
+    z-index: 1
+    &-wrap
+        &__slider
+            width: 100%
+            height: 100%
+            position: absolute
+            left: 0
+            top: 0
+            display: flex
+            z-index: -1
+    &-arrow
+        &__next
+            padding-left: 20rem
+            transform: translate(0, -50%)
+            right: 0
+            top: 50%
+        &__prev
+            padding-right: 20rem
+            transform: translate(0, -50%)
+            left: 0
+            top: 50%
+            svg
+                transform: rotate(-180deg)
+        &__next, &__prev
+            border-radius: 3rem
+            width: fit-content
+            position: absolute
+            z-index: 2
+            display: unset
+            width: 76rem
+            height: 85rem
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: rgba(0, 0, 0, 0.1)
+            outline: 1rem solid rgba(0, 0, 0, 0.1)
+            svg
+                width: 24rem
+                height: 24rem
+            polygon
+                fill: #fff
+    &-slider
+        &__item
+            position: relative !important
+            overflow: hidden
+            img
+                object-fit: contain
+                left: 0
+                top: 0
+    .container
+        width: 1140rem
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        justify-content: left
+    &-info
+        display: flex
+        flex-direction: column
+        padding-left: 488rem
+        &__title
+            font-size: 42rem
+            font-weight: 400
+            color: #000
+        &__subtitle
+            font-size: 26rem
+            font-weight: 400
+            margin-top: 10rem
+            color: #000
+        &__btns
+            display: flex
+            gap: 0 22rem
+            margin-top: 24rem
+            &-element
+                width: 155rem
+                height: 45rem
+                display: flex
+                align-items: center
+                justify-content: center
+                text-transform: uppercase
+                font-size: 16rem
+                border-radius: 3rem
+                &:nth-child(1)
+                    background-color: #ff891e
+                    color: #fff
+                &:nth-child(2)
+                    background: none
+                    border: 1rem solid #000
+    &-specialist
+        margin-top: 138rem
+        display: flex
+        gap: 0 17rem
+        &__item
+            width: calc( ( 100% - 51rem) / 3)
+            display: flex
+            align-items: center
+            gap: 0 9rem
+            background-color: rgba(0, 0, 0, 0.5)
+            outline: 1rem solid rgba(0, 0, 0, 0.44)
+            border-radius: 3rem
+            padding: 7rem 6rem 6rem 6rem
+            &-img
+                width: 48rem
+                height: 55rem
+                border-radius: 3rem
+            &-text
+                display: flex
+                flex-direction: column
+                gap: 2rem 0
+                &-date
+                    font-size: 11rem
+                    color: #fff
+                &-name
+                    font-size: 12rem
+                    font-weight: bold
+                    color: #fff
+                    line-height: 10rem
