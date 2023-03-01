@@ -2,22 +2,16 @@ const promotion = $('.promotion-slider');
 promotion.owlCarousel({
     items: 1,
     margin: 0,
-    dots: true,
+    dots: false,
     nav: true,
     loop: true,
     responsive: {
-        // 0: {
-        //     items: 1,
-        //     mouseDrag: false,
-        //     dots: false,
-        //     margin: 0
-        // },
-        // 720: {
-        //     items: 1,
-        //     mouseDrag: false,
-        //     dots: false,
-        //     rewind: true
-        // }
+        0: {
+            items: 1,
+            mouseDrag: false,
+            dots: true,
+            rewind: true
+        }
     }
 });
 $('.promotion-arrow__prev').click(function() {
